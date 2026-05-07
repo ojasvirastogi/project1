@@ -218,6 +218,14 @@ img {
     transition: background .2s ease, box-shadow .2s ease, transform .2s ease;
 }
 
+.admin-shell .btn,
+.admin-shell button,
+.admin-shell input,
+.admin-shell select,
+.admin-shell textarea {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
 .btn:hover {
     background: var(--primary-dark);
     box-shadow: 0 14px 28px rgba(13, 148, 136, .24);
