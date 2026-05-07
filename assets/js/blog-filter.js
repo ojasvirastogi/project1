@@ -32,6 +32,17 @@ $(function () {
 
     $('#resetFilters').on('click', function () {
         $form[0].reset();
+        $('#categoryInput').val('');
+        $('.category-tab').removeClass('active');
+        $('.category-tab[data-category=""]').addClass('active');
+        loadBlogs();
+    });
+
+    $('.category-tab[data-category]').on('click', function () {
+        const category = $(this).data('category');
+        $('#categoryInput').val(category);
+        $('.category-tab').removeClass('active');
+        $(this).addClass('active');
         loadBlogs();
     });
 });
