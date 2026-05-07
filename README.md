@@ -2,16 +2,7 @@
 
 A simple Core PHP and MySQL blog system with public blog pages and an admin panel.
 
-## Submission Links
 
-- GitHub Repository: `https://github.com/ojasvirastogi/project1`
-- Live Website: `http://jobyaari.fwh.is/index.php`
-- Admin Panel: `http://jobyaari.fwh.is/admin/login.php`
-
-Admin credentials:
-
-- Username: `admin`
-- Password: `password`
 
 ## Features
 
@@ -56,7 +47,4 @@ php -S localhost:8000
 - User side: `http://localhost:8000/index.php`
 - Admin panel: `http://localhost:8000/admin/login.php`
 
-Default admin credentials:
 
-- Username: `admin`
-- Password: `password`
