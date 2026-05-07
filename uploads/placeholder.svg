@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Blog image placeholder">
+  <rect width="1200" height="750" fill="#dbeafe"/>
+  <rect x="76" y="78" width="1048" height="594" rx="20" fill="#ffffff" opacity=".58"/>
+  <path d="M225 545l210-230 150 165 105-115 285 180H225z" fill="#0f766e" opacity=".76"/>
+  <circle cx="836" cy="230" r="72" fill="#f59e0b" opacity=".9"/>
+</svg>

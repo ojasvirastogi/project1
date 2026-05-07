@@ -1,0 +1,5 @@
+/uploads/*
+!/uploads/placeholder.svg
+.env
+.DS_Store
+Thumbs.db
