@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
-<body class="<?= e($bodyClass ?? '') ?>">
+<body>
 <header class="site-header">
     <nav class="nav">
         <a class="brand" href="index.php">JobYaari Blogs</a>
