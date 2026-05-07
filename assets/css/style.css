@@ -224,18 +224,26 @@ img {
 .admin-shell input,
 .admin-shell select,
 .admin-shell textarea {
-    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-family: "Inter", Arial, Helvetica, sans-serif !important;
 }
 
 .admin-shell .btn,
 .admin-shell button {
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 
+.admin-shell .input,
+.admin-shell .select,
+.admin-shell .textarea,
 .admin-shell input,
 .admin-shell select,
 .admin-shell textarea {
-    font-weight: 500;
+    font-weight: 500 !important;
+    letter-spacing: 0;
+}
+
+.admin-shell input[type="file"] {
+    font-weight: 400 !important;
 }
 
 .btn:hover {

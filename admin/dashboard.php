@@ -10,7 +10,7 @@ $blogs = db()->query('SELECT id, title, category, image, created_at FROM blogs O
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css?v=admin-font-2">
 </head>
 <body>
 <main class="admin-shell">
