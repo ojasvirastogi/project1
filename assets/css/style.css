@@ -35,19 +35,27 @@ body {
 }
 
 .travel-shell {
-    max-width: 1180px;
+    max-width: 1120px;
     margin: 0 auto;
-    padding: 44px 20px 56px;
+    padding: 38px 18px 56px;
+}
+
+.travel-shell > form {
+    background: #fff;
+    border: 1px solid rgba(255, 255, 255, .9);
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: 0 30px 80px rgba(15, 23, 42, .22);
 }
 
 .showcase {
-    min-height: 500px;
-    border: 3px solid rgba(255, 255, 255, .9);
+    min-height: 470px;
+    border: 0;
     border-radius: 4px;
     color: #fff;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 30px 80px rgba(15, 23, 42, .24);
+    box-shadow: none;
     background:
         linear-gradient(180deg, rgba(10, 20, 32, .42), rgba(10, 20, 32, .18) 42%, rgba(10, 20, 32, .78)),
         url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=82") center / cover;
@@ -65,11 +73,11 @@ body {
 .showcase-nav {
     position: relative;
     z-index: 1;
-    display: grid;
-    grid-template-columns: auto 1fr minmax(230px, 320px);
+    display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 22px 26px;
+    justify-content: space-between;
+    gap: 22px;
+    padding: 20px 22px;
 }
 
 .showcase-brand {
@@ -79,10 +87,12 @@ body {
 
 .showcase-links {
     display: flex;
-    gap: 22px;
+    gap: 18px;
     font-size: 13px;
     font-weight: 700;
     color: rgba(255, 255, 255, .86);
+    flex: 1;
+    justify-content: center;
 }
 
 .showcase-links a,
@@ -100,6 +110,7 @@ body {
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 8px;
+    width: min(330px, 100%);
     padding: 5px;
     border-radius: 7px;
     background: rgba(255, 255, 255, .16);
@@ -141,9 +152,9 @@ body {
 .showcase-content {
     position: absolute;
     z-index: 1;
-    left: 30px;
-    right: 30px;
-    bottom: 72px;
+    left: 26px;
+    right: 26px;
+    bottom: 76px;
     max-width: 650px;
 }
 
@@ -172,8 +183,8 @@ body {
 .showcase-meta {
     position: absolute;
     z-index: 1;
-    right: 28px;
-    bottom: 28px;
+    right: 24px;
+    bottom: 24px;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
@@ -193,19 +204,20 @@ body {
 
 .blog-panel {
     background: #fff;
-    border: 1px solid rgba(216, 224, 236, .9);
-    border-radius: 4px;
-    margin: -24px auto 0;
-    padding: 30px;
+    border: 0;
+    border-radius: 0 0 4px 4px;
+    margin: 0;
+    padding: 28px 20px 20px;
     position: relative;
     z-index: 2;
-    box-shadow: 0 24px 70px rgba(15, 23, 42, .13);
+    box-shadow: none;
     animation: fadeUp .7s ease both;
 }
 
 .page-heading.compact {
-    align-items: start;
+    align-items: flex-start;
     margin-bottom: 20px;
+    padding: 0 2px;
 }
 
 .page-heading.compact h2 {
@@ -223,7 +235,8 @@ body {
 }
 
 .date-filter {
-    min-width: 210px;
+    width: 220px;
+    max-width: 100%;
     display: grid;
     gap: 6px;
     color: var(--muted);
@@ -236,6 +249,7 @@ body {
     gap: 10px;
     flex-wrap: wrap;
     margin-bottom: 16px;
+    padding: 0 2px;
 }
 
 .category-tab {
@@ -269,6 +283,7 @@ body {
     gap: 10px;
     flex-wrap: wrap;
     margin: 0 0 22px;
+    padding: 0 2px;
 }
 
 .requirement-strip span {
@@ -446,7 +461,7 @@ img {
 .blog-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 22px;
+    gap: 18px;
 }
 
 .blog-card {
@@ -659,20 +674,31 @@ th {
     }
 
     .travel-shell {
-        padding: 16px 12px 34px;
+        padding: 14px 10px 34px;
+    }
+
+    .travel-shell > form {
+        padding: 8px;
     }
 
     .showcase {
-        min-height: 620px;
+        min-height: 610px;
     }
 
     .showcase-nav {
-        grid-template-columns: 1fr;
+        align-items: stretch;
+        flex-direction: column;
         padding: 18px;
+        gap: 14px;
     }
 
     .showcase-links {
         flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .showcase-search {
+        width: 100%;
     }
 
     .showcase-content {
@@ -688,11 +714,15 @@ th {
     }
 
     .blog-panel {
-        padding: 20px 14px;
+        padding: 20px 6px 6px;
     }
 
     .page-heading.compact {
         align-items: flex-start;
+    }
+
+    .date-filter {
+        width: 100%;
     }
 }
 
