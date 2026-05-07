@@ -2,6 +2,17 @@
 
 A simple Core PHP and MySQL blog system with public blog pages and an admin panel.
 
+## Submission Links
+
+- GitHub Repository: `https://github.com/ojasvirastogi/project1`
+- Live Website: `http://jobyaari.fwh.is/index.php`
+- Admin Panel: `http://jobyaari.fwh.is/admin/login.php`
+
+Admin credentials:
+
+- Username: `admin`
+- Password: `password`
+
 ## Features
 
 - Dynamic blog listing from MySQL
@@ -11,6 +22,16 @@ A simple Core PHP and MySQL blog system with public blog pages and an admin pane
 - Simple admin login
 - Admin add, edit, delete blog CRUD
 - Blog image upload support
+- Unsplash fallback images for blog cards
+
+## Tech Used
+
+- Core PHP
+- MySQL
+- HTML
+- CSS
+- jQuery
+- AJAX
 
 ## Setup
 
