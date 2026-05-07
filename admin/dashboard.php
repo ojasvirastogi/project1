@@ -40,7 +40,7 @@ $blogs = db()->query('SELECT id, title, category, image, created_at FROM blogs O
             <tbody>
             <?php while ($blog = $blogs->fetch_assoc()): ?>
                 <tr>
-                    <td><img src="../uploads/<?= e($blog['image'] ?: 'placeholder.svg') ?>" alt="" style="width: 84px; height: 54px; object-fit: cover; border-radius: 6px;"></td>
+                    <td><img src="<?= e(str_starts_with(blog_image_src($blog['image'], $blog['category']), 'http') ? blog_image_src($blog['image'], $blog['category']) : '../' . blog_image_src($blog['image'], $blog['category'])) ?>" alt="" style="width: 84px; height: 54px; object-fit: cover; border-radius: 6px;"></td>
                     <td><?= e($blog['title']) ?></td>
                     <td><?= e($blog['category']) ?></td>
                     <td><?= date('d M Y', strtotime($blog['created_at'])) ?></td>

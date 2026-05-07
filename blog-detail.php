@@ -15,7 +15,7 @@ $blog = $stmt->get_result()->fetch_assoc();
         <a class="read-more" href="index.php">&larr; Back to blogs</a>
         <h1><?= e($blog['title']) ?></h1>
         <div class="meta"><?= e($blog['category']) ?> &middot; <?= date('d M Y', strtotime($blog['created_at'])) ?></div>
-        <img class="detail-hero" src="uploads/<?= e($blog['image'] ?: 'placeholder.svg') ?>" alt="<?= e($blog['title']) ?>">
+        <img class="detail-hero" src="<?= e(blog_image_src($blog['image'], $blog['category'])) ?>" alt="<?= e($blog['title']) ?>">
         <div class="detail-content"><?= nl2br(e($blog['content'])) ?></div>
     <?php endif; ?>
 </section>

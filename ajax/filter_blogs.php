@@ -45,7 +45,7 @@ if ($blogs->num_rows === 0): ?>
 
 <?php while ($blog = $blogs->fetch_assoc()): ?>
     <article class="blog-card">
-        <img src="uploads/<?= e($blog['image'] ?: 'placeholder.svg') ?>" alt="<?= e($blog['title']) ?>">
+        <img src="<?= e(blog_image_src($blog['image'], $blog['category'])) ?>" alt="<?= e($blog['title']) ?>">
         <div class="blog-card-body">
             <span class="category"><?= e($blog['category']) ?></span>
             <h2><?= e($blog['title']) ?></h2>
