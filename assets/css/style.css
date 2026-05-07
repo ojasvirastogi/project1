@@ -89,6 +89,7 @@ img {
     gap: 8px;
     font-size: 22px;
     font-weight: 800;
+    font-family: "Inter", Arial, Helvetica, sans-serif !important;
     color: var(--navy);
     letter-spacing: 0;
     position: relative;
@@ -137,6 +138,18 @@ img {
     margin: 0 auto;
     padding: 42px 20px;
     animation: fadeUp .55s ease both;
+}
+
+main > .container:first-child {
+    margin-top: 30px;
+    margin-bottom: 36px;
+    padding: 38px 28px 30px;
+    border: 1px solid rgba(216, 224, 236, .85);
+    border-radius: 8px;
+    box-shadow: 0 24px 70px rgba(15, 23, 42, .12);
+    background:
+        linear-gradient(180deg, rgba(248, 250, 252, .90), rgba(248, 250, 252, .96) 34%, rgba(248, 250, 252, .98)),
+        url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=82") center top / cover;
 }
 
 .page-heading {
@@ -353,7 +366,8 @@ img {
     margin-top: auto;
     color: var(--primary-dark);
     font-size: 14px;
-    font-weight: 800;
+    font-weight: 600;
+    font-family: "Inter", Arial, Helvetica, sans-serif !important;
     width: max-content;
     transition: color .2s ease, transform .2s ease;
 }
@@ -518,6 +532,11 @@ tbody tr:hover {
 
     .container,
     .admin-shell {
+        padding: 24px 14px;
+    }
+
+    main > .container:first-child {
+        margin-top: 14px;
         padding: 24px 14px;
     }
 
